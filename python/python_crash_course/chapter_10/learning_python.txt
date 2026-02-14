@@ -1,0 +1,2 @@
+In Python, the synatx is simple and human readable.
+In Python, there are mainly two ways to loop I have learned i.e. 'for' and 'while'.
