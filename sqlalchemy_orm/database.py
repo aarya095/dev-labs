@@ -11,6 +11,7 @@ DB_NAME = config['DB_NAME']
 
 database_url = f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
-engine = create_engine(database_url)
+engine = create_engine(database_url, echo=True)
 
 print("Engine created successfully!")
+
