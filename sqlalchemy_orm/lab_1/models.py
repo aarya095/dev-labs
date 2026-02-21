@@ -19,6 +19,7 @@ class Product(Base):
     stock_quantity : Mapped[int]
     created_at = mapped_column(TIMESTAMP, default=datetime.datetime.utcnow)
     
-print(CreateTable(Product.__table__))
+#print(CreateTable(Product.__table__))
 
-Base.metadata.create_all(engine)
+if __name__ == '__main__':
+    Base.metadata.create_all(engine)
