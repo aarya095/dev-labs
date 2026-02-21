@@ -4,6 +4,12 @@ from sqlalchemy_orm.database import engine
 from sqlalchemy_orm.lab_1.models import Product
 
 
+# Delete Product
+with Session(engine) as session:
+    product_to_delete = session.query(Product).filter_by(product_name="Sharpner").one()
+    session.delete(product_to_delete)
+    session.commit()
+
 # Update Product
 """with Session(engine) as session:
     product_record = session.scalar(select(Product).where(Product.product_name == "CUtter"))
