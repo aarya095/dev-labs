@@ -1,13 +1,23 @@
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 from sqlalchemy_orm.database import engine
 from sqlalchemy_orm.lab_1.models import Product
 
-with Session(engine) as session:
+
+# Update Product
+"""with Session(engine) as session:
+    product_record = session.scalar(select(Product).where(Product.product_name == "CUtter"))
+    product_record.product_name = "Cutter"
+    session.commit()"""
+
+# View Product
+"""with Session(engine) as session:
     result = session.query(Product).all()
     #print(result)
     for row in result:
-        print(row.product_name)
+        print(row.product_name)"""
 
+#Create Product
 """with Session(engine) as session:
     pencil = Product(
         product_name = "Sharpner",
