@@ -9,5 +9,5 @@ Learn model definition, basic CRUD, sessions, and transactions.
     > Code is available in the models.py file 
 
     Output:  
-    ![image](/sqlalchemy_orm/assests/product_table_exists.png)  
-    ![image](/sqlalchemy_orm/assests/product_table_schema.png)
+    ![Image](/sqlalchemy_orm/assets/product_table_exists.png)  
+    ![Image](/sqlalchemy_orm/assets/product_table_schema.png)
